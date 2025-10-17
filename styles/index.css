@@ -3,3 +3,89 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color: linear-gradient(to right, #6a3093, #a044ff);
+  --custom-width: min(90vw, 1440px);
+}
+
+.header {
+  background: var(--primary-color);
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: var(--custom-width);
+  margin: auto;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.app {
+  width: var(--custom-width);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+  padding: 2rem
+}
+
+.account-data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.acc-balance {
+  color: #fff;
+}
+
+h4 {
+  font-weight: 800;
+}
+
+.amt {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.income-expense-ctn {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.income {
+  background-color: #b4debd4b;
+  color: #008000;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.expense {
+  background-color: #f080804b;
+  color: #ff0000;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.new-transaction fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nt-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
