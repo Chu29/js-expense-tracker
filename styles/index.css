@@ -29,7 +29,7 @@
   flex-direction: column;
   gap: 2rem;
   margin: auto;
-  padding: 2rem
+  padding: 2rem;
 }
 
 .account-data {
@@ -70,7 +70,7 @@ h4 {
 
 .expense {
   background-color: #f080804b;
-  color: #ff0000;
+  color: #ff0;
   width: 100%;
   max-width: 380px;
   padding: 20px 0;
