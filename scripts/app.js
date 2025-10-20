@@ -23,19 +23,21 @@ const updateCards = () => {
   currentExpense.innerHTML = `$${expense.toFixed(2)}`
 }
 
-const addNewTransaction = () => {
-  const desc = transDesc.value
-  const amt = Number(transAmt.value)
+// initialize the UI
+updateCards()
+
+const addNewTransaction = (desc, amt) => {
+  desc = transDesc.value.trim()
+  console.log(desc);
+  amt = Number(transAmt.value)
   if (incomeBtn.checked) {
     income += amt
-    currentIncome.innerHTML = `$${income}`
-    currentBalance.innerHTML = `$${income}`
   } else {
     expense += amt
-    currentExpense.innerHTML = `$${expense}`
-    balance = income - Number(transAmt.value)
-    currentBalance.innerHTML = `$${balance}`
   }
+
+  balance = income - expense
+  updateCards()
 }
 
 addTransBtn.addEventListener('click', () => {
