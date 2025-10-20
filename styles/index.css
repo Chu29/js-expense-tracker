@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 :root {
-  font-family: Roboto, sans-serif;
   --primary-color: linear-gradient(to right, #6a3093, #a044ff);
   --custom-width: min(90vw, 1440px);
 }
@@ -75,7 +75,7 @@ legend {
 
 .expense {
   background-color: #f080804b;
-  color: #ff0000;
+  color: #f00;
   width: 100%;
   max-width: 380px;
   padding: 40px 0;
