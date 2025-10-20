@@ -2,7 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  /* font-family: Poppins, sans-serif; */
+}
+
+body {
+  background-color:whitesmoke;
 }
 
 :root {
@@ -102,6 +106,16 @@ legend {
   gap: 20px;
 }
 
+.income-radio {
+  color: #008000;
+  font-weight: bolder;
+}
+
+.expense-radio {
+  color: #f00;
+  font-weight: bolder;
+}
+
 .nt-description,
 .nt-amount {
   outline: none;
@@ -119,6 +133,7 @@ legend {
 }
 
 .add-btn {
+  text-align: center;
   font-size: 1rem;
   font-weight: bolder;
   padding: 20px 0;
