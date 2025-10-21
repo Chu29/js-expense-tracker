@@ -4,9 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Expense Tracker</title>
   </head>
   <body>
+    <header class="header">
+      <div class="top">
+        <h1>FLOW</h1>
+        <div class="acc-balance">
+          <h4>Your Balance</h4>
+          <p class="amt current-balance" style="text-align: center;"><span class="currency">$</span>30,000</p>
+        </div>
+      </div>
+    </header>
+    <main class="app">
+      <div class="account-data">
+        <div class="income-expense-ctn">
+          <div class="income">
+            <h4>Income</h4>
+            <p class="amt current-income"><span class="currency">$</span>85,500</p>
+          </div>
+          <div class="expense">
+            <h4>Expense</h4>
+            <p class="amt current-expense"><span class="currency">$</span>55,500</p>
+          </div>
+        </div>
+      </div>
+      <form class="new-transaction">
+        <fieldset>
+          <legend>New Transaction</legend>
+          <div class="nt-input">
+            <input
+              type="text"
+              class="nt-description"
+              placeholder="Description"
+            />
+            <input type="text" class="nt-amount" placeholder="Amount" />
+          </div>
+          <div class="toggle-transaction">
+            <div class="t-income">
+              <input
+                type="radio"
+                name="toggle"
+                id="toggle-income"
+                value="income"
+              />
+              <label for="toggle-income" class="income-radio">Income</label>
+            </div>
+            <div class="t-expense">
+              <input
+                type="radio"
+                name="toggle"
+                id="toggle-expense"
+                value="expense"
+              />
+              <label for="toggle-expense" class="expense-radio">Expense</label>
+            </div>
+          </div>
+          <div class="add-btn">Add Transaction</div>
+        </fieldset>
+      </form>
+      <div class="recent-transaction">
+        <fieldset>
+          <legend>Recent Transactions</legend>
+          
+        </fieldset>
+      </div>
+    </main>
     <script src="scripts/app.js"></script>
   </body>
 </html>
