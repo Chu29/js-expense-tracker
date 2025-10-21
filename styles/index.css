@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: Poppins, sans-serif; */
+  font-family: Poppins, sans-serif;
 }
 
 body {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
 }
 
 :root {
@@ -104,6 +104,7 @@ legend {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .income-radio {
@@ -118,9 +119,10 @@ legend {
 
 .nt-description,
 .nt-amount {
+  /* font-size: 1.5rem; */
+  font-family: Poppins, sans-serif;
   outline: none;
   height: 50px;
-  font-size: 1.5rem;
   padding: 0 5px;
 }
 
@@ -146,4 +148,20 @@ legend {
 
 .del-btn {
   cursor: pointer;
+}
+
+.in {
+  color: #008000;
+  background-color: #e2ede5;
+}
+
+.out {
+  color: #f00;
+  background-color: #f3d4d2;
+}
+
+@media screen and (max-width: 425px) {
+  .income-expense-ctn {
+    flex-wrap: wrap;
+  }
 }
